@@ -7,7 +7,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import Constants from "expo-constants";
 import { StatusBar } from "expo-status-bar";
 
-const NAVIGATION_STATE_KEY = `NAVIGATION_STATE_KEY-${Constants.manifest.sdkVersion}`;
+const sdkVersion = Constants.manifest?.sdkVersion;
+const NAVIGATION_STATE_KEY = sdkVersion ? `NAVIGATION_STATE_KEY-${sdkVersion}` : 'DEFAULT_NAVIGATION_STATE_KEY';
+
+//const NAVIGATION_STATE_KEY = `NAVIGATION_STATE_KEY-${Constants.manifest.sdkVersion}`;
 
 const usePromiseAll = (promises, cb) =>
     useEffect(() => {

@@ -25,8 +25,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const flexDirectionValue = condition ? "row" : "column";
-
 const Add = ({ navigation }) => {
   const dispatch = useDispatch();
   const { navigate } = navigation;
@@ -71,7 +69,7 @@ const Add = ({ navigation }) => {
         </Text>
       </Box>
 
-      <Box flexDirection={flexDirectionValue} marginTop="xl">
+      <Box flexDirection="row" marginTop="xl">
         <Box
           justifyContent="space-between"
           flexDirection="row"
