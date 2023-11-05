@@ -8,7 +8,6 @@ import "react-native-gesture-handler";
 
 import store from "./store";
 
-/* Stacks */
 import { AllAppsStackNavigator } from "./src/components/AllApps";
 import { Cryptonavigator } from "./src/crypto";
 import { ExpenseNavigator } from "./src/expenseTracking";
