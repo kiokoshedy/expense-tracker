@@ -113,11 +113,10 @@ const Home = () => {
             >
               <AnimatedFlatList
                 scrollEventThrottle={16} // <-- Use 1 here to make sure no events are ever missed
-                keyExtractor={(item) => item.key}
+                keyExtractor={(item, index) => item.key ?? index.toString()}
                 horizontal
                 bounces={false}
                 decelerationRate={Platform.OS === "ios" ? 0 : 0.98}
-                horizontal
                 renderToHardwareTextureAndroid
                 contentContainerStyle={{ alignItems: "center" }}
                 snapToInterval={ITEM_SIZE}
@@ -162,7 +161,6 @@ const Home = () => {
                   );
                 }}
                 style={{ padding: 0, backgroundColor: theme["colors"].primary }}
-                keyExtractor={(item, i) => i.toString()}
               />
             </Animated.View>
           </Box>
