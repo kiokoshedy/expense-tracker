@@ -9,9 +9,9 @@ import {
 
 import Animated, { interpolate } from "react-native-reanimated";
 import { withTransition } from "react-native-redash";
-import { LISTSEGMENT } from "../../components/Constants";
-import { Close } from "../../SvgIcons";
-import theme, { Box, Text } from "../../components/theme";
+import { LISTSEGMENT } from "../../src/components/Constants";
+import { Close } from "../../src/myIcons";
+import theme, { Box, Text } from "../../src/components/theme";
 import { coinData } from "./data";
 
 const { width, height } = Dimensions.get("window");

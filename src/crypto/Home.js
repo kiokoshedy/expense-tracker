@@ -9,7 +9,7 @@ import {
   Animated as RAnimated,
   TouchableWithoutFeedback,
 } from "react-native";
-import theme, { Box, Text } from "../../components/theme";
+import theme, { Box, Text } from "../../src/components/theme";
 
 import { State } from "react-native-gesture-handler";
 
@@ -25,7 +25,7 @@ import Tab from "./Tab";
 import HomeOverlay from "./HomeOverlay";
 
 /* Icons */
-import { PortfolioIcon, Market, Pulse, News, Add, Menu } from "../../SvgIcons";
+import { PortfolioIcon, Market, Pulse, News, Add, Menu } from "../../src/myIcons";
 
 /* Values */
 import {
@@ -34,7 +34,7 @@ import {
   PADDING,
   DURATION,
   LISTSEGMENT,
-} from "../../components/Constants";
+} from "../../src/components/Constants";
 
 import { coinData } from "./data";
 

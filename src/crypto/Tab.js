@@ -1,6 +1,6 @@
 import React from "react";
 import Animated, { eq, interpolate } from "react-native-reanimated";
-import { ICON_SIZE, SEGMENT } from "../../components/Constants";
+import { ICON_SIZE, SEGMENT } from "../../src/components/Constants";
 import { TouchableWithoutFeedback, StyleSheet } from "react-native";
 import { withTransition } from "react-native-redash";
 const { View } = Animated;

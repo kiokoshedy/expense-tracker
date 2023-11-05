@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
-import theme from "../../components/theme";
+import theme from "../../src/components/theme";
 
 export default function QuizContainer({ children }) {
   return (
