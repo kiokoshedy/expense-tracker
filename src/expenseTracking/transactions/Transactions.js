@@ -2,11 +2,13 @@ import React from "react";
 import { ImageBackground, SectionList, View, StyleSheet } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import moment from "moment";
-import Animated from "react-native-reanimated";
-import { useValue, withTransition } from "react-native-redash";
 import { Ebg1 } from "../../../assets/images";
 import theme, { Box, Text } from "../../components/theme";
 import { Chart, AddIcon, Delete } from "../Svgs";
+
+import Animated, { Value } from "react-native-reanimated";
+import * as Redash from "react-native-redash";
+const { useValue, withTransition } = Redash;
 
 export const moneySign = "₦";
 

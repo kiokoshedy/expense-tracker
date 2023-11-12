@@ -13,9 +13,7 @@ import theme, { Box, Text } from "../../src/components/theme";
 
 import { State } from "react-native-gesture-handler";
 
-import Animated, { useCode, cond, eq, set } from "react-native-reanimated";
-
-const { Value } = Animated;
+import Animated, { Value, useCode, cond, eq, set } from 'react-native-reanimated';
 
 import { useValue, withTransition } from "react-native-redash";
 
