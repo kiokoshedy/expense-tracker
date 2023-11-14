@@ -4,11 +4,9 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 import moment from "moment";
 import { Ebg1 } from "../../../assets/images";
 import theme, { Box, Text } from "../../components/theme";
-import { Chart, AddIcon, Delete } from "../Svgs";
+import { AddIcon, Delete } from "../Svgs";
 
-import Animated, { Value } from "react-native-reanimated";
-import * as Redash from "react-native-redash";
-const { useValue, withTransition } = Redash;
+import Animated, { withTransition } from "react-native-reanimated";
 
 export const moneySign = "₦";
 
@@ -24,7 +22,7 @@ const Transactions = ({ navigation }) => {
 
   const active = new Animated.Value(0);
   const transition = withTransition(active, { duration: 200 });
-
+  
   const onNavigate = () => {
     navigate("AddTransaction");
   };
