@@ -132,6 +132,7 @@ const Transactions = ({ navigation }) => {
           keyExtractor={(item, index) => item + index}
           renderItem={({ item }) => {
             const index = item.id;
+            console.log('Index:', index);
 
             return (
               <Animated.View
